@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-function Projects(props){
+const Projects = (props) =>{
   const [projects, setProjects]= useState(null);
   const getProjectsData = async() =>{
     const response= await fetch(props.URL + "projects");

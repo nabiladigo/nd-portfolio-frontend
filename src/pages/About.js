@@ -1,6 +1,6 @@
 import {useState, useEffect} from "react";
 
-function About(props){
+const  About= (props) =>{
   const[about, setAbout] = useState(null);
   const getAboutData = async() =>{
     const response = await fetch(props.URL + "about");
